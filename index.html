@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Ahmad Tantawy</title>
+  </head>
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="./media/video-loop.mp4" type="video/mp4" />
+      </video>
+
+      <header class="header">
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation__link navigation__skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#media" class="navigation__link navigation__media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navigation__link navigation__projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#clients" class="navigation__link navigation__clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation__link navigation__contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            id="toggle"
+            class="toggle__checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="bio section">
+        <div class="bio__data">
+          <h1 class="bio__heading">Hey, I'm Ahmad.</h1>
+          <p class="bio__objective">
+            <span class="bio__name">Web developer</span> from Port Said, Egypt.
+            I create custom websites to help businesses do better online.
+            Connect with me on
+            <a
+              class="bio__github"
+              href="https://github.com/ahmad-tantawy"
+              target="_blank"
+              >GitHub</a
+            >,
+            <a
+              class="bio__linkedin"
+              href="https://www.linkedin.com/in/ahmdtantawy/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            and
+            <a
+              class="bio__codepen"
+              href="https://codepen.io/ahmadtantawy"
+              target="_blank"
+              >Codepen</a
+            >
+            to explore my work.
+          </p>
+          <a class="bio__links say-hi-link" href="#contact">Say Hi</a>
+          <a class="bio__links find-out-link" href="./media/Ahmad-Tantawy.pdf">
+            Download CV <span class="bio__arrow">🠛</span>
+          </a>
+        </div>
+        <div class="bio__pic-content">
+          <img
+            class="bio__pic"
+            src="img/personal-pic.png"
+            alt="image of Ahmad Tantawy"
+          />
+        </div>
+      </section>
+
+      <section id="skills" class="skills section section--with-bg">
+        <h2 class="h2-heading">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h2 class="skills__title">HTML</h2>
+            <span class="skills__years">Current focus. </span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">CSS</h2>
+            <span class="skills__years">Current focus. </span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Javascript</h2>
+            <span class="skills__years">Current focus. </span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React</h2>
+            <span class="skills__years">Within the next 3 months.</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Redux</h2>
+            <span class="skills__years">Within the next 3 months.</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React Testing Library</h2>
+            <span class="skills__years">Within the next 3 months.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="media" class="section media">
+        <video class="media__video" poster="img/Thumbnail.jpg" controls>
+          <!-- The origin of this video => "https://www.youtube.com/watch?v=2iHoeHVmw0Q&list=RDCMUCajohICvclyqW7scLd2gV4w&index=2" -->
+          <source src="./media/Business.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section class="projects section" id="projects">
+        <h2 class="h2-heading">MY PROJECTS</h2>
+        <div class="projects__main">
+          <img
+            class="projects__img responsive-img"
+            src="./img/project-1.jpg"
+            alt="Tic Tac Toe Game"
+          />
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Tic Tac Toe <br />
+              Game
+            </h3>
+            <p class="projects__description">
+              Play a better Tic Tac Toe game with a cooler look and smarter
+              computer opponent. This final project uses a simple and nice
+              design, and you can see your wins and losses. It's like the
+              classic game, but fancier!.
+            </p>
+            <a
+              class="projects__link"
+              href="https://github.com/ahmad-tantawy/FrontEndCraftsmanship-Almdrasa/tree/main/01_Python_Track/Tic-Tac-Toe_Game"
+              target="_blank"
+              >Project Link</a
+            >
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Expense Tracker <br />
+              App
+            </h3>
+            <p class="projects__description">
+              Easily track your spending with this simple Expense Tracker using
+              Tkinter. Record expenses, see them in a clear table, and convert
+              currencies hassle-free for straightforward money management.
+            </p>
+            <a
+              class="projects__link"
+              href="https://github.com/ahmad-tantawy/FrontEndCraftsmanship-Almdrasa/tree/main/01_Python_Track/Expense_Tracker"
+              target="_blank"
+              >Project Link</a
+            >
+          </div>
+          <img
+            class="projects__img responsive-img"
+            src="./img/project-2.jpg"
+            alt="Expense Tracker App"
+          />
+        </div>
+      </section>
+
+      <section id="clients" class="section clients section--with-bg">
+        <h2 class="h2-heading">
+          What My <br />
+          Clients Says
+        </h2>
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, temporibus voluptatem. Porro, et blanditiis corporis
+              vero quas cum sequi deleniti ex suscipit vel! Recusandae saepe
+              maiores eligendi! Minima, facilis aliquam?
+            </p>
+            <p class="clients__opinion">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, temporibus voluptatem. Porro, et blanditiis corporis
+              vero quas cum sequi deleniti ex suscipit vel! Recusandae saepe
+              maiores eligendi! Minima, facilis aliquam?
+            </p>
+            <p class="clients__opinion">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate, temporibus voluptatem. Porro, et blanditiis corporis
+              vero quas cum sequi deleniti ex suscipit vel! Recusandae saepe
+              maiores eligendi! Minima, facilis aliquam?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+
+          <a href="mailto: ahmadtantawy.dev@gmail.com" class="contact__email"
+            >ahmadtantawy.dev@gmail.com</a
+          >
+          <div class="contact__socials">
+            <a class="contact__social" href="#">
+              <img src="./img/brand/facebook.svg" alt="facebook" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./img/brand/twitter.svg" alt="twitter" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./img/brand/youtube.svg" alt="youtube" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./img/brand/github.svg" alt="github" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./img/brand/instagram.svg" alt="instagram.svg" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./img/brand/LinkedIn.svg" alt="LinkedIn.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__formContent">
+          <h2 class="h2-heading">
+            Let's Work <br />
+            Together!
+          </h2>
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                class="contact__input"
+                type="text"
+                placeholder="Full Name"
+                required
+                name="fullName"
+              />
+              <input
+                class="contact__input"
+                type="tel"
+                placeholder="Phone No."
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                required
+                name="telephone"
+              />
+            </div>
+            <textarea
+              name="description"
+              id="description"
+              rows="1"
+              class="contact__input contact__textarea"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input class="contact__button" type="submit" value="Send Message" />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        © 2023 by <span class="footer__auther">Ahmad Tantawy</span>
+      </footer>
+    </div>
+  </body>
+</html>
