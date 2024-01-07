@@ -23,6 +23,7 @@
   display: none;
 }
 
+// Start Nav
 .navigation__list {
   display: flex;
   gap: 2rem;
@@ -31,7 +32,7 @@
 .navigation__link:link,
 .navigation__link:visited {
   text-decoration: none;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .navigation__link:hover,
@@ -51,6 +52,7 @@
   font-weight: var(--font-weight-bold);
 }
 
+// Start Toggle
 .toggle {
   display: flex;
   gap: 1rem;
@@ -58,7 +60,7 @@
 }
 
 .toggle__title {
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-semi-bold);
   font-size: var(--font-size-18);
 }
 
